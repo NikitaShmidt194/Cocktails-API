@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/fon.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+
+
+    <section class="sect">
+        <div class="animation">
+            <div class="layer layer1"></div>
+            <div class="layer layer2"></div>
+            <div class="layer layer3"></div>
+            <div class="layer layer4"></div>
+            <div class="layer layer5"></div>
+            <div class="layer layer6"></div>
+        </div>
+        <div class="block">
+            <h1 class="title_cocktails wow bounceInRight" data-wow-duration="1.5s">Different types of cocktails</h1>
+            <div class="input wow bounceInRight" data-wow-duration="1.5s">
+                <input class="search-txt" type="text" placeholder='Enter cocktail' id="input">
+                <select class="search-txt" id="select">
+                    <option value="All">All</option>
+                    <option value="Alcoholic">Alcoholic</option>
+                    <option value="Non_Alcoholic">Non_Alcoholic</option>
+                </select>
+            </div>
+
+
+            <div id="output"></div>
+        </div>
+
+
+
+    </section>
+
+
+    <script src="./script.js/wow.js"></script>
+    <!-- <script src="./script.js/wow.js.map"></script> -->
+    <script src="./script.js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="./script.js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.animation {
+    position: relative;
+    width: 100%;
+    background: #131313;
+    z-index: -1;
+    filter: blur(px);
+}
+
+.layer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    height: 270vh;
+    background: #fff;
+    box-shadow: inset -10px 0 40px rgba(0, 0, 0, 1),
+        inset 10px 0 40px rgba(0, 0, 0, 1),
+        inset -10px 0 10px rgba(255, 255, 255, 0.25),
+        inset 10px 0 10px rgba(255, 255, 255, 0.25),
+        0 0 50px rgba(0, 0, 0, 1);
+
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 35px -35px;
+    }
+}
+
+@keyframes animate_two {
+    0% {
+        background-position: 35px -35px;
+
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.layer.layer1 {
+    background: #222 radial-gradient(#6dff73 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 11;
+    animation: animate 1.5s linear infinite;
+}
+
+.layer.layer2 {
+    background: #222 radial-gradient(#db0aff 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%, -37%) rotate(45deg);
+    z-index: 3;
+    animation: animate_two 1.5s linear infinite;
+}
+
+.layer.layer3 {
+    background: #222 radial-gradient(#03a9f4 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%, -63%) rotate(45deg);
+    z-index: 3;
+    animation: animate_two 1.5s linear infinite;
+
+}
+
+.layer.layer4 {
+    background: #222 radial-gradient(#ffc107 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 12;
+    animation: animate_two 1.5s linear infinite;
+
+}
+
+.layer.layer5 {
+    background: #222 radial-gradient(#ea0606 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%, -37%) rotate(-45deg);
+    z-index: 10;
+    animation: animate 1.5s linear infinite;
+
+}
+
+.layer.layer6 {
+    background: #222 radial-gradient(#0f0 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%, -63%) rotate(-45deg);
+    z-index: 10;
+    animation: animate 1.5s linear infinite;
+
+}
